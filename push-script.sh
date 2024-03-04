@@ -1,9 +1,9 @@
 #!/bin/sh
 
-echo "-> Push Code Script:"
+echo "-> **** Push Code Script: ***** "
 echo "-> Current working directory: $(pwd)"
 cd alpha-beta-app/ || exit
-npm build 
+npm run build 
 cd ../ || exit 
 
 echo "-> Copying built files to current directory"
