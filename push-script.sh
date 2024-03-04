@@ -7,7 +7,7 @@ npm run build
 cd .. || exit 
 
 echo "-> Copying built files to current directory"
-cp alpha-beta-app/build/* . 
+cp -r alpha-beta-app/build/* . 
 
 git add --all 
 git commit -m "Script: updating build files for our live site"
