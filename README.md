@@ -17,5 +17,5 @@ Stepst to change the site code:
 3. Navigate to bin
 3. Run this command: 
 ``` 
-source push-script.sh
+source bin/push-script.sh #Run this from the run of the project
 ```
