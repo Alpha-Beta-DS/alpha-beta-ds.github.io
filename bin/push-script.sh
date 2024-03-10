@@ -1,16 +1,16 @@
 #!/bin/sh
 set -e 
 
-echo "--> **** Push Code Script: ***** "
+echo "--> **** Build Code Script: ***** "
 
 echo "--> Current working directory: $(pwd)"
-cd ../alpha-beta-app/ || exit
+cd ../Alpha-Beta-DS/frontend || exit
 
 echo "--> Building the production bundle:" 
 npm run build 
-cd .. || exit 
+cd ../../ || exit 
 
 echo "--> Copying built files to current directory"
-cp -r alpha-beta-app/build/* . 
+cp -r Alpha-Beta-App/frontend/build/* . 
 
 echo "--> Please proceed with Git workflow (git add, commit, push)"
